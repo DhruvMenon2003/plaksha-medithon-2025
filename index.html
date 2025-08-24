@@ -1,287 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plaksha Medithon 2025</title>
-  <!-- Tailwind CSS via CDN for rapid styling -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- html2canvas and jsPDF for PDF export -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNa5gicsAyzM1dR7Sqxipa4Pq3W4k6e+vj0XYnYwYha+zCdSTYb93sdQsrV4XwlGpGGmC/uxEBCx1+1jXydAiA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-Yl+ftRZau9PP3Y+B/uB0Mye9/O2Y5F6fiK392qAFVY+8YKqj18wuhzc++gOT8v6ITUXV8PtEt+XkS3kVpWp0ug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <style>
-    /* Custom styles replicating original flyer aesthetic */
-    body {
-      background-color: #F2F0EC;
-      font-family: 'Open Sans', sans-serif;
-    }
-    .flyer-container {
-      max-width: 8.5in;
-      min-height: 11in;
-      margin: 1rem auto;
-      padding: 1rem;
-      background-color: white;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      position: relative;
-    }
-    [contenteditable="true"]:hover {
-      outline: 2px dashed #00A0B4;
-      background-color: #f0f8ff;
-    }
-    /* Hide the file inputs, we trigger them via the images */
-    .image-input {
-      display: none;
-    }
-    .editable-image {
-      cursor: pointer;
-    }
-  </style>
-</head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaksha Medithon 2025</title>
+    <script src="Plaksha%20Medithon%202025_files/3.4.17"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="Plaksha%20Medithon%202025_files/css2.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #F2F0EC; /* CHALK */
+        }
+        .flyer-container {
+            max-width: 8.5in;
+            min-height: 11in;
+            margin: auto;
+            padding: 5mm;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .heading {
+            font-size: 28px;
+            text-align: center;
+            font-weight: 700;
+            color: #007878; /* PLAKSHA TEAL */
+        }
+        .sub-heading {
+            font-size: 21px;
+            text-align: center;
+            font-weight: 700;
+            color: #00A0B4; /* PLAKSHA AQUA */
+        }
+        .running-text {
+            font-size: 13px;
+            text-align: left;
+            color: #333333; /* GRAPHITE */
+            line-height: 1.6;
+        }
+        .icon-3d {
+            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+        }
+        .image-container img {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        [contenteditable="true"]:hover {
+            outline: 2px dashed #00A0B4;
+            background-color: #f0f8ff;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-4{margin-right:1rem}.mt-2{margin-top:0.5rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.h-10{height:2.5rem}.h-16{height:4rem}.h-40{height:10rem}.w-1\/2{width:50%}.w-1\/4{width:25%}.w-10{width:2.5rem}.w-16{width:4rem}.w-32{width:8rem}.w-40{width:10rem}.w-full{width:100%}.max-w-md{max-width:28rem}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.rounded-lg{border-radius:0.5rem}.border-b-2{border-bottom-width:2px}.border-t-2{border-top-width:2px}.border-\[\#00A0B4\]{--tw-border-opacity:1;border-color:rgb(0 160 180 / var(--tw-border-opacity, 1))}.bg-\[\#F2F2F2\]{--tw-bg-opacity:1;background-color:rgb(242 242 242 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-6{padding:1.5rem}.pb-2{padding-bottom:0.5rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-4{margin-right:1rem}.mt-2{margin-top:0.5rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.h-10{height:2.5rem}.h-16{height:4rem}.h-40{height:10rem}.w-1\/2{width:50%}.w-1\/4{width:25%}.w-10{width:2.5rem}.w-16{width:4rem}.w-32{width:8rem}.w-40{width:10rem}.w-full{width:100%}.max-w-md{max-width:28rem}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.rounded-lg{border-radius:0.5rem}.border-b-2{border-bottom-width:2px}.border-t-2{border-top-width:2px}.border-\[\#00A0B4\]{--tw-border-opacity:1;border-color:rgb(0 160 180 / var(--tw-border-opacity, 1))}.bg-\[\#F2F2F2\]{--tw-bg-opacity:1;background-color:rgb(242 242 242 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-6{padding:1.5rem}.pb-2{padding-bottom:0.5rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-4{margin-right:1rem}.mt-2{margin-top:0.5rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.h-10{height:2.5rem}.h-16{height:4rem}.h-40{height:10rem}.w-1\/2{width:50%}.w-1\/4{width:25%}.w-10{width:2.5rem}.w-16{width:4rem}.w-32{width:8rem}.w-40{width:10rem}.w-full{width:100%}.max-w-md{max-width:28rem}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.rounded-lg{border-radius:0.5rem}.border-b-2{border-bottom-width:2px}.border-t-2{border-top-width:2px}.border-\[\#00A0B4\]{--tw-border-opacity:1;border-color:rgb(0 160 180 / var(--tw-border-opacity, 1))}.bg-\[\#F2F2F2\]{--tw-bg-opacity:1;background-color:rgb(242 242 242 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-6{padding:1.5rem}.pb-2{padding-bottom:0.5rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-4{margin-right:1rem}.mt-2{margin-top:0.5rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.h-10{height:2.5rem}.h-16{height:4rem}.h-40{height:10rem}.w-1\/2{width:50%}.w-1\/4{width:25%}.w-10{width:2.5rem}.w-16{width:4rem}.w-32{width:8rem}.w-40{width:10rem}.w-full{width:100%}.max-w-md{max-width:28rem}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.rounded-lg{border-radius:0.5rem}.border-b-2{border-bottom-width:2px}.border-t-2{border-top-width:2px}.border-\[\#00A0B4\]{--tw-border-opacity:1;border-color:rgb(0 160 180 / var(--tw-border-opacity, 1))}.bg-\[\#F2F2F2\]{--tw-bg-opacity:1;background-color:rgb(242 242 242 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-6{padding:1.5rem}.pb-2{padding-bottom:0.5rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-4{margin-right:1rem}.mt-2{margin-top:0.5rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.h-10{height:2.5rem}.h-16{height:4rem}.h-40{height:10rem}.w-1\/2{width:50%}.w-1\/4{width:25%}.w-10{width:2.5rem}.w-16{width:4rem}.w-32{width:8rem}.w-40{width:10rem}.w-full{width:100%}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.rounded-lg{border-radius:0.5rem}.border-b-2{border-bottom-width:2px}.border-t-2{border-top-width:2px}.border-\[\#00A0B4\]{--tw-border-opacity:1;border-color:rgb(0 160 180 / var(--tw-border-opacity, 1))}.bg-\[\#F2F2F2\]{--tw-bg-opacity:1;background-color:rgb(242 242 242 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-6{padding:1.5rem}.pb-2{padding-bottom:0.5rem}.pt-4{padding-top:1rem}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}</style></head>
 <body class="bg-gray-100">
-  <!-- Export button -->
-  <div class="text-center my-4">
-    <button id="exportBtn" class="px-4 py-2 bg-[#007878] text-white rounded-lg hover:bg-[#006060] focus:outline-none">Export to PDF</button>
-  </div>
 
-  <div id="flyer" class="flyer-container">
-    <!-- Header Section -->
-    <header class="mb-8 flex items-center justify-between">
-      <div class="w-1/4 flex justify-center">
-        <!-- Logo image is editable: click to choose another file -->
-        <img id="logoImg" src="https://via.placeholder.com/150" alt="Logo" class="w-32 editable-image">
-        <input type="file" accept="image/*" id="logoInput" class="image-input">
-      </div>
-      <div class="w-1/2 text-center">
-        <h1 class="text-2xl font-bold text-[#007878]" contenteditable="true">Plaksha MediThon 2025</h1>
-        <h2 class="text-xl font-bold text-[#00A0B4] mt-2" contenteditable="true">Join now to innovate Healthcare!</h2>
-      </div>
-      <div class="w-1/4"></div>
-    </header>
+    <div class="flyer-container">
+        <!-- Header Section -->
+        <header class="mb-8 flex items-center justify-between">
+            <!-- EDITABLE LOGO: Replace the URL in the src="..." attribute with your logo link. -->
+            <div class="w-1/4">
+                 <img src="Plaksha%20Medithon%202025_files/Plaksha%20Medithon%20Logo.png" alt="Company Logo" class="w-32 icon-3d">
+            </div>
+            <div class="w-1/2 text-center">
+                <h1 class="heading" contenteditable="true">Plaksha MediThon 2025</h1>
+                <h2 class="sub-heading mt-2" contenteditable="true">Join now to innovate Healthcare!</h2>
+            </div>
+            <div class="w-1/4"></div> <!-- This empty div helps keep the title centered -->
+        </header>
 
-    <!-- Introduction -->
-    <p class="text-sm text-left text-[#333] mb-6" contenteditable="true">
-      <strong>If Engineers, Doctors and Scientists are ready to nucleate healthcare transforming ideas over a single weekend, here is why you should join our upcoming Health‑tech Hackathon.</strong>
-    </p>
+        <!-- Introduction -->
+        <p class="running-text mb-6" contenteditable="true">
+           <strong> If Engineers, Doctors and Scientists are ready to 
+nucleate healthcare transforming ideas over a single weekend, here is 
+why you should join our upcoming Health-tech Hackathon.</strong>
+        </p>
 
-    <!-- Impact Stories Section -->
-    <section class="mb-8">
-      <h3 class="text-lg font-bold text-center text-[#00A0B4] mb-4 border-b-2 border-[#00A0B4] pb-2" contenteditable="true">Real‑world Impact Stories</h3>
-      <div class="grid md:grid-cols-3 gap-6 items-start">
-        <!-- Story 1 -->
-        <div class="text-center">
-          <img id="img1" src="https://via.placeholder.com/300x200" alt="Story 1" class="w-full mb-2 rounded-lg editable-image">
-          <input type="file" accept="image/*" id="img1Input" class="image-input">
-          <p class="text-sm text-left text-[#333]" contenteditable="true">
-            📌<strong> At an MIT Hackathon, a small team built a solution to simplify medication delivery. PillPack later acquired by Amazon.</strong>
-          </p>
+        <!-- Impact Stories Section -->
+        <div class="mb-8">
+            <h3 class="sub-heading mb-4 border-b-2 border-[#00A0B4] pb-2" contenteditable="true">Real-world Impact Stories</h3>
+            <div class="grid md:grid-cols-3 gap-6 items-start">
+                <div class="image-container text-center">
+                    <!-- EDITABLE IMAGE: Replace the URL in the src="..." attribute with your image link. -->
+                    <img src="Plaksha%20Medithon%202025_files/PillPack_logo_as_of_January_2022-591451663.jpg" alt="PillPack" class="mx-auto mb-2 w-full">
+                    <p class="running-text" contenteditable="true">📌<strong> At an MIT Hackathon, a small team built a solution to simplify medication delivery. PillPack later acquired by Amazon.</strong></p>
+                </div>
+                <div class="image-container text-center">
+                    <!-- EDITABLE IMAGE: Replace the URL in the src="..." attribute with your image link. -->
+                    <img src="Plaksha%20Medithon%202025_files/jana-carea-aine-2-1185868977.png">
+                    <p class="running-text" contenteditable="true">📌<strong> From a diabetes-focused hackathon in India, a passionate team created Jana Care — acquired by Siemens Healthineers.</strong></p>
+                </div>
+                <div class="image-container text-center">
+                    <!-- EDITABLE IMAGE: Replace the URL in the src="..." attribute with your image link. -->
+                    <img src="Plaksha%20Medithon%202025_files/data-kris-slab.download-2296992570.jpg" alt="Augmented Infant Resuscitator" class="mx-auto mb-2 w-full">
+                    <p class="running-text" contenteditable="true">📌<strong>
+ The Augmented Infant Resuscitator (AIR), developed in 48 hours at 
+CAMTech/MGH MediThon in Uganda, is now backed by $1M+ funding and saving
+ newborns.</strong></p>
+                </div>
+            </div>
         </div>
-        <!-- Story 2 -->
-        <div class="text-center">
-          <img id="img2" src="https://via.placeholder.com/300x200" alt="Story 2" class="w-full mb-2 rounded-lg editable-image">
-          <input type="file" accept="image/*" id="img2Input" class="image-input">
-          <p class="text-sm text-left text-[#333]" contenteditable="true">
-            📌<strong> From a diabetes‑focused hackathon in India, a passionate team created Jana Care — acquired by Siemens Healthineers.</strong>
-          </p>
-        </div>
-        <!-- Story 3 -->
-        <div class="text-center">
-          <img id="img3" src="https://via.placeholder.com/300x200" alt="Story 3" class="w-full mb-2 rounded-lg editable-image">
-          <input type="file" accept="image/*" id="img3Input" class="image-input">
-          <p class="text-sm text-left text-[#333]" contenteditable="true">
-            📌<strong>The Augmented Infant Resuscitator (AIR), developed in 48 hours at CAMTech/MGH MediThon in Uganda, is now backed by $1M+ funding and saving newborns.</strong>
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Key Features Section -->
-    <section class="grid md:grid-cols-2 gap-8 mb-8">
-      <!-- Column 1 -->
-      <div>
-        <div class="flex items-center mb-4">
-          <img id="icon1" src="https://via.placeholder.com/64" alt="Collaboration" class="w-16 h-16 mr-4 editable-image">
-          <input type="file" accept="image/*" id="icon1Input" class="image-input">
-          <h2 class="text-md font-bold text-[#00A0B4]" contenteditable="true">Break down silos</h2>
+        <!-- Key Features Section -->
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+                <div class="flex items-center mb-4">
+                    <!-- EDITABLE ICON: Replace the URL in the src="..." attribute with your icon link. -->
+                    <img src="Plaksha%20Medithon%202025_files/handshake.png" alt="Collaboration Icon" class="w-16 h-16 mr-4 icon-3d">
+                    <h2 class="sub-heading mt-2"><strong>Break down silos</strong></h2>
+                </div>
+                <div class="flex items-center mb-4">
+                     <!-- EDITABLE ICON: Replace the URL in the src="..." attribute with your icon link. -->
+                    <img src="Plaksha%20Medithon%202025_files/c1869cb2-2e68-4b70-9fe0-f317601e419b_removalai_preview.png" alt="Innovation Icon" class="w-16 h-16 mr-4 icon-3d">
+                    <h2 class="sub-heading mt-2"><strong>Rapid Prototyping</strong></h2>
+                </div>
+                <div class="flex items-center">
+                     <!-- EDITABLE ICON: Replace the URL in the src="..." attribute with your icon link. -->
+                    <img src="Plaksha%20Medithon%202025_files/LightBulb.png" alt="Innovation Icon" class="w-16 h-16 mr-4 icon-3d">
+                    <h2 class="sub-heading mt-2"><strong>Low Cost, Locally Relevant Solutions</strong></h2>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center mb-4">
+                    <!-- EDITABLE ICON: Replace the URL in the src="..." attribute with your icon link. -->
+                    <img src="Plaksha%20Medithon%202025_files/PlantGrowth.png" alt="Support Icon" class="w-16 h-16 mr-4 icon-3d">
+                   <h2 class="sub-heading mt-2"><strong>Post-hackathon Support</strong></h2>
+                </div>
+                <div class="flex items-center">
+                    <!-- EDITABLE ICON: Replace the URL in the src="..." attribute with your icon link. -->
+                    <img src="Plaksha%20Medithon%202025_files/Global%20Network.png" alt="Network Icon" class="w-16 h-16 mr-4 icon-3d">
+                    <h2 class="sub-heading mt-2"><strong>Expand your Network</strong></h2>
+                </div>
+            </div>
         </div>
-        <div class="flex items-center mb-4">
-          <img id="icon2" src="https://via.placeholder.com/64" alt="Rapid Prototyping" class="w-16 h-16 mr-4 editable-image">
-          <input type="file" accept="image/*" id="icon2Input" class="image-input">
-          <h2 class="text-md font-bold text-[#00A0B4]" contenteditable="true">Rapid Prototyping</h2>
-        </div>
-        <div class="flex items-center">
-          <img id="icon3" src="https://via.placeholder.com/64" alt="Local Solutions" class="w-16 h-16 mr-4 editable-image">
-          <input type="file" accept="image/*" id="icon3Input" class="image-input">
-          <h2 class="text-md font-bold text-[#00A0B4]" contenteditable="true">Low Cost, Locally Relevant Solutions</h2>
-        </div>
-      </div>
-      <!-- Column 2 -->
-      <div>
-        <div class="flex items-center mb-4">
-          <img id="icon4" src="https://via.placeholder.com/64" alt="Post Hackathon" class="w-16 h-16 mr-4 editable-image">
-          <input type="file" accept="image/*" id="icon4Input" class="image-input">
-          <h2 class="text-md font-bold text-[#00A0B4]" contenteditable="true">Post‑hackathon Support</h2>
-        </div>
-        <div class="flex items-center">
-          <img id="icon5" src="https://via.placeholder.com/64" alt="Networking" class="w-16 h-16 mr-4 editable-image">
-          <input type="file" accept="image/*" id="icon5Input" class="image-input">
-          <h2 class="text-md font-bold text-[#00A0B4]" contenteditable="true">Expand your Network</h2>
-        </div>
-      </div>
-    </section>
 
-    <!-- Who Should Attend Section -->
-    <section class="mb-8 bg-[#F2F2F2] p-6 rounded-lg">
-      <h3 class="text-lg font-bold text-[#00A0B4] mb-4" contenteditable="true">Who should attend:</h3>
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <div class="flex items-center mb-4">
-            <img id="who1" src="https://via.placeholder.com/64" alt="Engineers" class="w-16 h-16 mr-4 editable-image">
-            <input type="file" accept="image/*" id="who1Input" class="image-input">
-            <h2 class="text-md font-bold text-[#00A0B4]" contenteditable="true">Engineers</h2>
-          </div>
-          <div class="flex items-center mb-4">
-            <img id="who2" src="https://via.placeholder.com/64" alt="University Students" class="w-16 h-16 mr-4 editable-image">
-            <input type="file" accept="image/*" id="who2Input" class="image-input">
-            <h2 class="text-md font-bold text-[#00A0B4]" contenteditable="true">University Students</h2>
-          </div>
+        <!-- Who Should Attend Section -->
+        <div class="mb-8 bg-[#F2F2F2] p-6 rounded-lg">
+            <h3 class="sub-heading mb-4" contenteditable="true">Who should attend:</h3>
+   <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+                <div class="flex items-center mb-4">
+                    <!-- EDITABLE ICON: Replace the URL in the src="..." attribute with your icon link. -->
+                    <img src="Plaksha%20Medithon%202025_files/Engineer.svg" alt="Collaboration Icon" class="w-16 h-16 mr-4 icon-3d">
+                    <h2 class="sub-heading mt-2"><strong>Engineers</strong></h2>
+                </div>
+                <div class="flex items-center mb-4">
+                     <!-- EDITABLE ICON: Replace the URL in the src="..." attribute with your icon link. -->
+                    <img src="Plaksha%20Medithon%202025_files/University%20Student%20Iconjpg.jpg" alt="Innovation Icon" class="w-16 h-16 mr-4 icon-3d">
+                    <h2 class="sub-heading mt-2"><strong>University Students</strong></h2>
+                </div>
+             
+            </div>
+            <div>
+                <div class="flex items-center mb-4">
+                    <!-- EDITABLE ICON: Replace the URL in the src="..." attribute with your icon link. -->
+                    <img src="Plaksha%20Medithon%202025_files/Doctor.svg" alt="Support Icon" class="w-16 h-16 mr-4 icon-3d">
+                   <h2 class="sub-heading mt-2"><strong>Doctors</strong></h2>
+                </div>
+                <div class="flex items-center">
+                    <!-- EDITABLE ICON: Replace the URL in the src="..." attribute with your icon link. -->
+                    <img src="Plaksha%20Medithon%202025_files/Scientist.svg" alt="Network Icon" class="w-16 h-16 mr-4 icon-3d">
+                    <h2 class="sub-heading mt-2"><strong>Scientists</strong></h2>
+                </div>
+            </div>
         </div>
-        <div>
-          <div class="flex items-center mb-4">
-            <img id="who3" src="https://via.placeholder.com/64" alt="Doctors" class="w-16 h-16 mr-4 editable-image">
-            <input type="file" accept="image/*" id="who3Input" class="image-input">
-            <h2 class="text-md font-bold text-[#00A0B4]" contenteditable="true">Doctors</h2>
-          </div>
-          <div class="flex items-center">
-            <img id="who4" src="https://via.placeholder.com/64" alt="Scientists" class="w-16 h-16 mr-4 editable-image">
-            <input type="file" accept="image/*" id="who4Input" class="image-input">
-            <h2 class="text-md font-bold text-[#00A0B4]" contenteditable="true">Scientists</h2>
-          </div>
+
+            <div class="running-text" contenteditable="true"><br><h2 class="sub-heading mt-2"><strong>If you do not have the combination team we can help you form one for your idea!!</strong></h2>
+            </div>
         </div>
-      </div>
-      <p class="text-sm text-[#333]" contenteditable="true">
-        <strong>If you do not have the combination team we can help you form one for your idea!!</strong>
-      </p>
-    </section>
 
-    <!-- Event Details Section -->
-    <section class="mb-8">
-      <h3 class="text-lg font-bold text-[#00A0B4] mb-4" contenteditable="true">Event Details:</h3>
-      <p class="text-sm text-left text-[#333]" contenteditable="true">
-        📅 <strong>When:</strong> Oct 10–12, 2025 | Three‑day long weekend Hackathon<br>
-        📍 <strong>Where:</strong> Plaksha University, Mohali<br>
-        🎯 <strong>What:</strong> 3‑day challenge to build a working prototype
-      </p>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="text-center mb-8 p-6 rounded-lg" style="background-color: #007878;">
-      <h3 class="text-2xl font-bold text-white mb-4" contenteditable="true">Ready to Make a Difference?</h3>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-white">
-        <div class="mb-4 md:mb-0">
-          <p class="text-lg mb-2" contenteditable="true">
-            1️⃣ Scan the QR code and fill the form
-          </p>
-          <!-- QR code image -->
-          <img id="qrImg" src="https://via.placeholder.com/160" alt="QR Code" class="w-40 h-40 mx-auto bg-white p-2 rounded-lg editable-image">
-          <input type="file" accept="image/*" id="qrInput" class="image-input">
-          <a href="#" class="text-sm text-yellow-300 hover:underline mt-2 inline-block" contenteditable="true">Or use this link</a>
+        <!-- Event Details Section -->
+        <div class="mb-8">
+            <h3 class="sub-heading mb-4" contenteditable="true">Event Details:</h3>
+            <h3 class="sub-heading mb-4"><strong>
+                📅 <strong>When:</strong> Oct 10–12, 2025 | Three-day long weekend Hackathon<br>
+                📍 <strong>Where:</strong> Plaksha University, Mohali<br>
+                🎯 <strong>What:</strong> 3-day challenge to build a working prototype
+            </strong></h3>
         </div>
-        <div class="text-left">
-          <p class="text-lg mb-2" contenteditable="true">
-            2️⃣ Await our confirmation and team formation support. Each team should be of 3‑5 members having at least one medical professional, one engineer and one researcher/scientist.
-          </p>
-          <p class="text-lg" contenteditable="true">
-            3️⃣ Bring your passion, ideas, and willingness to collaborate.
-          </p>
+
+        <!-- Call to Action Section -->
+        <div class="text-center mb-8 p-6 rounded-lg" style="background-color: #007878;">
+            <h3 class="text-2xl font-bold text-white mb-4" contenteditable="true">Ready to Make a Difference?</h3>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="text-white">
+                    <strong>  
+                    <p class="text-lg mb-2" contenteditable="true">1️⃣ Scan the QR code and fill the form
+                    <!-- EDITABLE QR CODE: Replace the URL in the src="..." attribute with your QR code image link. -->
+                    <img src="https://github.com/DhruvMenon2003/My-App/blob/master/qrcode_241620926_a3ce5db0a979aaca9e291fe484e5988f.png?raw=true" alt="QR Code" class="w-40 h-40 mx-auto bg-white p-2 rounded-lg">
+                     <!-- EDITABLE LINK: Replace the URL in the href="..." attribute with your form link. -->
+                     <a href="file:///C:/Users/lenovo/Downloads/YOUR_GOOGLE_FORM_LINK_HERE" class="text-sm text-yellow-300 hover:underline mt-2 inline-block" contenteditable="true">Or use this link</a>
+             
+                </p></strong><div class="text-lg mb-2" contenteditable="true"><div><strong>2️⃣
+ Await our confirmation and team formation support.Each team should be 
+of 3-5 members having at least one medical professional, one engineer 
+and one researcher/scientist.&nbsp;</strong></div><div><strong>3️⃣ Bring your passion, ideas, and willingness to collaborate.
+             </strong></div>
+   			</div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+        
+        <p class="heading text-xl" contenteditable="true">Be the spark that ignites lifesaving solutions!!</p>
+        <p class="sub-heading text-lg" contenteditable="true">Looking forward to building the future of healthcare with you.</p>
 
-    <p class="text-center text-lg font-bold text-[#007878] mb-2" contenteditable="true">Be the spark that ignites lifesaving solutions!!</p>
-    <p class="text-center text-[#00A0B4] text-md mb-6" contenteditable="true">Looking forward to building the future of healthcare with you.</p>
+        <!-- Footer -->
+        <footer class="mt-8 pt-4 border-t-2 border-[#00A0B4]">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                     <!-- EDITABLE ICON: Replace the URL in the src="..." attribute with your icon link. -->
+                    <img src="https://github.com/DhruvMenon2003/My-App/blob/master/Contact.png?raw=true" alt="Contact Icon" class="w-13 h-13 mr-4 icon-3d">
+                    <p class="running-text" contenteditable="true"><strong>For details or queries, contact: 9142595882, 9780120140</strong></p>
+                </div>
+                <div class="running-text text-right" contenteditable="true">
+                    <p>[🏛️ Editable Space for adding logos of affiliated funding organizations]</p>
+                </div>
+            </div>
+        </footer>
 
-    <!-- Footer -->
-    <footer class="mt-8 pt-4 border-t-2 border-[#00A0B4]">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center">
-          <img id="contactIcon" src="https://via.placeholder.com/52" alt="Contact Icon" class="w-13 h-13 mr-4 editable-image">
-          <input type="file" accept="image/*" id="contactIconInput" class="image-input">
-          <p class="text-sm text-[#333]" contenteditable="true"><strong>For details or queries, contact: 9142595882, 9780120140</strong></p>
-        </div>
-        <div class="text-right text-sm text-[#333]" contenteditable="true">
-          <p>[🏛️ Editable Space for adding logos of affiliated funding organizations]</p>
-        </div>
-      </div>
-    </footer>
-  </div>
+    </div>
 
-  <script>
-    // Helper to wire image inputs to update images when files are selected
-    function setupImageEditing(imgId, inputId) {
-      const imgEl = document.getElementById(imgId);
-      const inputEl = document.getElementById(inputId);
-      imgEl.addEventListener('click', () => inputEl.click());
-      inputEl.addEventListener('change', (e) => {
-        const file = e.target.files[0];
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = (ev) => {
-            imgEl.src = ev.target.result;
-          };
-          reader.readAsDataURL(file);
-        }
-      });
-    }
-    // Setup images for editing
-    const images = [
-      ['logoImg','logoInput'],
-      ['img1','img1Input'],
-      ['img2','img2Input'],
-      ['img3','img3Input'],
-      ['icon1','icon1Input'],
-      ['icon2','icon2Input'],
-      ['icon3','icon3Input'],
-      ['icon4','icon4Input'],
-      ['icon5','icon5Input'],
-      ['who1','who1Input'],
-      ['who2','who2Input'],
-      ['who3','who3Input'],
-      ['who4','who4Input'],
-      ['qrImg','qrInput'],
-      ['contactIcon','contactIconInput']
-    ];
-    images.forEach(pair => setupImageEditing(pair[0], pair[1]));
 
-    // Export to PDF functionality
-    document.getElementById('exportBtn').addEventListener('click', async () => {
-      const flyer = document.getElementById('flyer');
-      // Use html2canvas to capture the flyer
-      const canvas = await html2canvas(flyer, { scale: 2 });
-      const imgData = canvas.toDataURL('image/png');
-      const { jsPDF } = window.jspdf;
-      // Determine orientation based on dimensions
-      const pdf = new jsPDF('p', 'pt', 'a4');
-      const pageWidth = pdf.internal.pageSize.getWidth();
-      const pageHeight = pdf.internal.pageSize.getHeight();
-      // Resize image to fit A4
-      const imgWidth = pageWidth;
-      const imgHeight = canvas.height * imgWidth / canvas.width;
-      let position = 0;
-      // If content overflows one page, handle multiple pages
-      if (imgHeight > pageHeight) {
-        let heightLeft = imgHeight;
-        let y = 0;
-        while (heightLeft > 0) {
-          pdf.addImage(imgData, 'PNG', 0, y, imgWidth, imgHeight);
-          heightLeft -= pageHeight;
-          y -= pageHeight;
-          if (heightLeft > 0) pdf.addPage();
-        }
-      } else {
-        pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-      }
-      pdf.save('plaksha-medithon-2025.pdf');
-    });
-  </script>
-</body>
-</html>
+
+</body></html>
